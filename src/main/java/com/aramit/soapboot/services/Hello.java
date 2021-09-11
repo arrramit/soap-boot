@@ -1,4 +1,4 @@
-package com.aramit.soapboot.service;
+package com.aramit.soapboot.services;
 
 
 import javax.jws.WebMethod;

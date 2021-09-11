@@ -1,6 +1,6 @@
 package com.aramit.soapboot;
 
-import com.aramit.soapboot.service.HelloImpl;
+import com.aramit.soapboot.services.HelloImpl;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +14,14 @@ public class WebServiceConfig {
     @Autowired
     private Bus bus;
 
+
+
     @Bean
     public Endpoint endpoint(){
         EndpointImpl endpoint = new EndpointImpl(bus,new HelloImpl());
         endpoint.publish("/hello");
         return endpoint;
     }
+
+
 }

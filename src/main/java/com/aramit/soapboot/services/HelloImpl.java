@@ -1,4 +1,4 @@
-package com.aramit.soapboot.service;
+package com.aramit.soapboot.services;
 
 import javax.jws.WebService;
 import java.util.logging.Logger;
@@ -7,7 +7,7 @@ import java.util.logging.Logger;
         serviceName = "HelloService",
         portName = "HelloPort",
         targetNamespace = "http://service.soap/",
-        endpointInterface = "com.aramit.soapboot.service.Hello"
+        endpointInterface = "com.aramit.soapboot.services.Hello"
 )
 
 public class HelloImpl {
